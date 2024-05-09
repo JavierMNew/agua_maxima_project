@@ -1,0 +1,27 @@
+---
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+import LoginForm from "../components/LoginForm.astro"
+import HeaderLogin from "../components/HeaderLogin.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout
+    title="Agua Máxima Purificación"
+    description="Fresca y pura gota a gota"
+>
+    <main>
+        <SectionContainer>
+            <div class="flex flex-row">
+                <img class="h-[100%] w-[75%] overflow-hidden" src="https://www.purificadorasdeagua.mx/wp-content/uploads/2023/07/VENTA-EN-PISO-2.jpg" alt="">
+                <LoginForm />
+            </div>
+        </SectionContainer>
+    </main>
+</Layout>
+
+<style>
+    main {
+
+    }
+</style>
