@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SideBarTextless from "../components/SideBarTextless.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SectionMain from "../components/SectionMain.astro";
+import SectionViews from "../components/SectionViews.astro";
+import List from "../components/List.astro";
+import Table from "../components/Table.astro";
+---
+
+<Layout
+    title="Agua Máxima Purificación"
+    description="Fresca y pura gota a gota"
+>
+    <main>
+        <SectionContainer>
+            <SideBarTextless />
+            <SectionMain>
+                <Header />
+                <div class="w-[740px] h-full fixed ml-[calc(50%-395px)] py-24">
+                    <h1 class="text-black text-5xl font-bold pb-10 text-center">
+                        Gestión de almacén
+                    </h1>
+                    
+                    <Table />
+                </div>
+            </SectionMain>
+        </SectionContainer>
+    </main>
+</Layout>
