@@ -1,21 +1,53 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import SideBarTextless from "../components/SideBarTextless.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SectionMain from "../components/SectionMain.astro";
+import SectionViews from "../components/SectionViews.astro";
+import List from "../components/List.astro"
 ---
 
-<Layout title="Agua Máxima Purificación"
-description="Fresca y pura gota a gota">
+<Layout
+	title="Agua Máxima Purificación"
+	description="Fresca y pura gota a gota"
+>
 	<main>
-		
+		<SectionContainer>
+			<SideBarTextless />
+			<SectionMain>
+				<Header />
+				<div
+					class="w-[740px] h-full fixed ml-[calc(50%-395px)] py-24"
+				>
+					<h1 class="text-black text-5xl font-bold pb-10 text-center">
+						Bienvenido
+					</h1>
+					<h2 class="text-xl px-10 pb-10">
+						<span>
+							Sistema de Gestión para Purificadora de Agua.
+							Controle y administre de forma óptima y fácil el
+							flujo de préstamos, devoluciones y ventas de
+							Garrafones.
+						</span>
+					</h2>
+					<h2 class="text-xl px-10 pb-6">
+						<span>
+							Esta herramienta le permitirá llevar un control
+							completo y detallado de su Purificadora, tendrá
+							acceso a herramientas especiales para tareas
+							específicas, como lo son:
+						</span>
+					</h2>
+					<List />
+				</div>
+			</SectionMain>
+		</SectionContainer>
 	</main>
 </Layout>
 
 <style>
 	main {
-    margin: auto;
-    padding: 1rem;
-    max-width: calc(100% - 2rem);
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    line-height: 1.6;
-  }
+	}
 </style>
