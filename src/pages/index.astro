@@ -7,6 +7,7 @@ import SectionContainer from "../components/SectionContainer.astro";
 import SectionMain from "../components/SectionMain.astro";
 import SectionViews from "../components/SectionViews.astro";
 import List from "../components/List.astro"
+import SideBar from "../components/SideBar.astro";
 ---
 
 <Layout
@@ -15,11 +16,11 @@ import List from "../components/List.astro"
 >
 	<main>
 		<SectionContainer>
-			<SideBarTextless />
+			<SideBar />
 			<SectionMain>
 				<Header />
 				<div
-					class="w-[740px] h-full fixed ml-[calc(50%-395px)] py-24"
+					class="w-[740px] h-full fixed ml-[calc(50%-395px)] pt-10 pb-24"
 				>
 					<h1 class="text-black text-5xl font-bold pb-10 text-center">
 						Bienvenido

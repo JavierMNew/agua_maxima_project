@@ -1,0 +1,106 @@
+---
+const {
+    title1,
+    title2,
+    title3,
+    title4,
+    title5,
+    description1,
+    description2,
+    description3,
+    dato1,
+    dato2,
+    dato3,
+    dato4,
+    dato5,
+    dato6,
+    dato7,
+    dato8,
+    dato9,
+} = Astro.props;
+---
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+            <tr>
+                <th scope="col" class="px-6 py-3"> {title1} </th>
+                <th scope="col" class="px-6 py-3"> {title2} </th>
+                <th scope="col" class="px-6 py-3"> {title3} </th>
+                <th scope="col" class="px-6 py-3"> {title4} </th>
+                <th scope="col" class="px-6 py-3"> {title5} </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b">
+                <td class="px-6 py-4"> 1 </td>
+                <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                    {description1}
+                </th>
+                <td class="px-6 py-4"> 432 </td>
+                <td class="px-6 py-4"> $20 </td>
+                <td class="flex items-center px-6 py-4">
+                    <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline"
+                        >Editar</a
+                    >
+                    <a
+                        href="#"
+                        class="font-medium text-red-600 hover:underline ms-3"
+                        >Remover</a
+                    >
+                </td>
+            </tr>
+            <tr class="bg-white border-b">
+                <td class="px-6 py-4"> 2 </td>
+                <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                    {description2}
+                </th>
+                <td class="px-6 py-4"> 372 </td>
+                <td class="px-6 py-4"> $60 </td>
+                <td class="flex items-center px-6 py-4">
+                    <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline"
+                        >Editar</a
+                    >
+                    <a
+                        href="#"
+                        class="font-medium text-red-600 hover:underline ms-3"
+                        >Remover</a
+                    >
+                </td>
+            </tr>
+            <tr class="bg-white">
+                <td class="px-6 py-4"> 3 </td>
+                <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                    {description3}
+                </th>
+                <td class="px-6 py-4"> 221 </td>
+                <td class="px-6 py-4"> $50 </td>
+                <td class="flex items-center px-6 py-4">
+                    <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline"
+                        >Editar</a
+                    >
+                    <a
+                        href="#"
+                        class="font-medium text-red-600 hover:underline ms-3"
+                        >Remover</a
+                    >
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

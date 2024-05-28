@@ -1,21 +1,93 @@
 ---
-import HomeIcon from "./Icons/Home.astro"
-import WareHouseIcon from "./Icons/WareHouse.astro"
-import UsersIcon from "./Icons/Users.astro"
-import BillsIcon from "./Icons/Bills.astro"
-import ReportsIcon from "./Icons/Reports.astro"
-import SalesIcon from "./Icons/Sales.astro"
+import HomeIcon from "./Icons/Home.astro";
+import WareHouseIcon from "./Icons/WareHouse.astro";
+import UsersIcon from "./Icons/Users.astro";
+import BillsIcon from "./Icons/Bills.astro";
+import ReportsIcon from "./Icons/Reports.astro";
+import SalesIcon from "./Icons/Sales.astro";
+import SettingsIcon from "./Icons/Settings.astro";
+
+
+
+/*
+const navLinksEls = document.querySelectorAll('a');
+const windowPathName = window.location.pathname;
+
+
+navLinksEls.forEach(navLinksEl => {
+    const navLinkPathName = new URL((navLinksEl as HTMLAnchorElement).href).pathname;
+
+    if ((windowPathName === navLinkPathName) || (windowPathName === '/' && navLinkPathName === '/')) {
+        navLinksEl.classList.add('active');
+    }
+});
+*/
 ---
-<div class="flex relative bg-neutral-300">
-    <div class="fixed w-[200px] h-full pt-[30px] pb-[0xp] bg-neutral-500">
-        <h2 class="text-center mb-[30px]">Agua Máxima Purificación</h2>
-        <ul>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><HomeIcon class="mr-2" />Inicio</a></li>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><WareHouseIcon class="mr-2" />Almacén</a></li>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><UsersIcon class="mr-2" />Usuarios</a></li>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><BillsIcon class="mr-2" />Gastos</a></li>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><ReportsIcon class="mr-2" />Reportes</a></li>
-            <li class="p-[15px] border-b-[1px] border-solid border-t-[1px] flex items-center"><a class="flex items-center" href=""><SalesIcon class="mr-2" />Ventas</a></li>
-        </ul>
-    </div>
+
+<div
+    id="sidebar"
+    class="fixed w-[200px] h-full py-[9px] border-gray-200 border-r-[1px]"
+>
+    <li class="p-[15px] flex items-center">
+        <div class="flex w-full h-full justify-center items-center">
+            <a id="nav_link" class="" href="/"
+                ><img
+                    class="h-6 w-auto"
+                    src="./public/project/svgl2.webp"
+                    alt="Logo"
+                /></a
+            >
+        </div>
+    </li>
+    <ul>
+        <li
+            class="p-[15px] flex items-center focus:outline-nones transition-colors duration-200 border-gray-200 border-t-[1px]"
+        >
+            <a id="nav_link" class="flex gap-1 text-[#3093aa]" href="/"
+                ><HomeIcon class="size-5" />Inicio</a
+            >
+        </li>
+        <li
+            class="p-[15px] flex items-center text-gray-500 focus:outline-nones transition-colors duration-200 "
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/almacen"
+                ><WareHouseIcon class="size-5" />Almacén</a
+            >
+        </li>
+        <li
+            class="p-[15px] flex items-center text-gray-500 focus:outline-nones transition-colors duration-200"
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/usuarios"
+                ><UsersIcon class="size-5" />Usuarios</a
+            >
+        </li>
+        <li
+            class="p-[15px] flex items-center text-gray-500 focus:outline-nones transition-colors duration-200"
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/"
+                ><BillsIcon class="size-5" />Gastos</a
+            >
+        </li>
+        <li
+            class="p-[15px] flex items-center text-gray-500 focus:outline-nones transition-colors duration-200"
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/"
+                ><ReportsIcon class="size-5" />Reportes</a
+            >
+        </li>
+        <li
+            class="p-[15px] flex items-center text-gray-500 focus:outline-nones transition-colors duration-200"
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/"
+                ><SalesIcon class="size-5" />Ventas</a
+            >
+        </li>
+        <li
+            class="p-[15px] fixed bottom-0 text-gray-500 focus:outline-nones transition-colors duration-200"
+        >
+            <a id="nav_link" class="flex gap-1 hover:text-[#3093aa]" href="/"
+                ><SettingsIcon class="size-5" />Configuración</a
+            >
+        </li>
+    </ul>
 </div>
