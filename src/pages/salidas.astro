@@ -10,8 +10,7 @@ import List from "../components/List.astro";
 import Table from "../components/Almacen/AlmacenTable.astro";
 import SideBar from "../components/SideBar.astro";
 import AlmacenCards from "../components/Almacen/AlmacenCards.astro";
-import UtileriaCards from "../components/Almacen/Planta/Utileria/UtileriaCards.astro";
-import CamionetasCards from "../components/Almacen/Camionetas/CamionetasCards.astro";
+import Form from "../components/Form.astro";
 ---
 
 <Layout
@@ -27,12 +26,12 @@ import CamionetasCards from "../components/Almacen/Camionetas/CamionetasCards.as
                     class="h-full flex flex-col ml-[calc(50%-601px)] pt-10 pb-24"
                 >
                     <h1 class="text-black text-5xl font-bold pb-10 text-center">
-                        Gestión de camionetas
+                        Gestión de salidas
                     </h1>
-                    <h2 class="text-xl px-10 pb-10 text-center">
-                        Gestiona de forma óptima las camionetas de la planta
+                    <h2 class="text-xl px-10 text-center">
+                        Gestiona de forma óptima las salidas de las camionetas de la empresa
                     </h2>
-                    <CamionetasCards />
+                    <Form />
                 </div>
             </SectionMain>
         </SectionContainer>

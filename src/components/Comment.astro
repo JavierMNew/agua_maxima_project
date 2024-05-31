@@ -1,0 +1,14 @@
+---
+const { class: className, id } = Astro.props
+---
+<form id={id} class={`${className} w-full max-w-xl bg-white rounded-lg px-4 pt-2`}>
+    <div class="flex flex-wrap -mx-3 mb-4">
+        <div class="w-full md:w-full px-3 mb-2 mt-2">
+            <textarea
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                name="body"
+                placeholder="Escríbelo aquí"
+                required></textarea>
+        </div>
+    </div>
+</form>

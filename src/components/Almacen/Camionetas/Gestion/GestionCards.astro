@@ -1,0 +1,97 @@
+---
+const { titleCard1, titleCard2 } = Astro.props;
+---
+
+<section class="py-10 px-4 grid grid-cols-3 ml-[calc(50%-500px)] w-full">
+    <div class="container mx-auto w-96 max-w-[1300px]">
+        <div class="gap-x-4 gap-y-28 lg:gap-y-16">
+            <div
+                class="relative group h-48 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            >
+                <a href="/entradas" class="block">
+                    <div class="h-28">
+                        <div
+                            class="absolute -top-20 lg:top-[-10%] left-[5%] z-40 group-hover:top-[-40%] group-hover:opacity-[0.9] duration-300 w-[90%] h-48 bg-[#4cafc4] rounded-xl justify-items-center align-middle"
+                        >
+                            <div
+                                class="flex justify-center items-center h-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="155"
+                                    height="155"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="white"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"></path><path
+                                        d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                                    ></path><path d="M21 12h-13l3 -3"
+                                    ></path><path d="M11 15l-3 -3"></path></svg
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 z-10 w-full">
+                        <p
+                            class="mb-2 inline-block text-tg text-center w-full text-xl font-sans font-semibold leading-snug tracking-normal antialiased hover:text-[#3093aa]"
+                        >
+                            {titleCard1}
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto w-96 max-w-[1300px]">
+        <div class="gap-x-4 gap-y-28 lg:gap-y-16">
+            <div
+                class="relative group h-48 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            >
+                <a href="/salidas" class="block">
+                    <div class="h-28">
+                        <div
+                            class="absolute -top-20 lg:top-[-10%] left-[5%] z-40 group-hover:top-[-40%] group-hover:opacity-[0.9] duration-300 w-[90%] h-48 bg-[#4cafc4] rounded-xl justify-items-center align-middle"
+                        >
+                            <div
+                                class="flex justify-center items-center h-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="155"
+                                    height="155"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="white"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"></path><path
+                                        d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                                    ></path><path d="M9 12h12l-3 -3"
+                                    ></path><path d="M18 15l3 -3"></path></svg
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 z-10 w-full">
+                        <p
+                            class="mb-2 inline-block text-tg text-center w-full text-xl font-sans font-semibold leading-snug tracking-normal antialiased hover:text-[#3093aa]"
+                        >
+                            {titleCard2}
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
